@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: فرآیند ویرایش در  JOSM
 permalink: /fa/josm/more-about-josm/
 lang: fa
+dir: rtl
 category: josm
 ---
 

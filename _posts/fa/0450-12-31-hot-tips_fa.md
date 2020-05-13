@@ -1,7 +1,8 @@
 ---
-layout: doc-rtl
+layout: doc
 permalink: /fa/hot-tips/
 lang: fa
+dir: rtl
 title: ترفندهای HOT - شروع به کار به عنوان نقشه‌کش جدید - ویرایشگر iD
 category: hot-tips
 cover: yes

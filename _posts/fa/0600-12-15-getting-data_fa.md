@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: گرفتن داده های OSM
 permalink: /fa/osm-data/getting-data/
 lang: fa
+dir: rtl
 category: osm-data
 ---
 

@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: ابزارهای ویرایش JOSM
 permalink: /fa/josm/josm-tools/
 lang: fa
+dir: rtl
 category: josm
 ---
 

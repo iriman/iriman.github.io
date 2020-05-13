@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: افزودن عکسهای هوایی  tms, wms یا wmts به JOSM
 permalink: /fa/josm/josm-adding-imagery/
 lang: fa
+dir: rtl
 category: josm
 ---
 
