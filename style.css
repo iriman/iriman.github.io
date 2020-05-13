@@ -40,6 +40,19 @@
 .cell10 { float:left; width:83.3333%; }
 .cell11 { float:left; width:91.6666%; }
 .cell12 { float:left; width:100.0000%; }
+[dir="rtl"] .cell0 { float:right; width:04.1666%; }
+[dir="rtl"] .cell1 { float:right; width:08.3333%; }
+[dir="rtl"] .cell2 { float:right; width:16.6666%; }
+[dir="rtl"] .cell3 { float:right; width:25.0000%; }
+[dir="rtl"] .cell4 { float:right; width:33.3333%; }
+[dir="rtl"] .cell5 { float:right; width:41.6666%; }
+[dir="rtl"] .cell6 { float:right; width:50.0000%; }
+[dir="rtl"] .cell7 { float:right; width:58.3333%; }
+[dir="rtl"] .cell8 { float:right; width:66.6666%; }
+[dir="rtl"] .cell9 { float:right; width:75.0000%; }
+[dir="rtl"] .cell10 { float:right; width:83.3333%; }
+[dir="rtl"] .cell11 { float:right; width:91.6666%; }
+[dir="rtl"] .cell12 { float:right; width:100.0000%; }
 .right {float:right;}
 .left {float:left;}
 
