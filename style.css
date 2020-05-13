@@ -461,11 +461,20 @@ figure {
   background:url(./img/sprite.png) no-repeat;
 }
 
+[dir="rtl"] .logo {
+  margin-right:0;
+  margin-left:20px;
+}
+
 .logo-learn {
   width:170px;
   height:42px;
   margin-bottom:8px;
   background-position:0px -115px;
+}
+
+[dir="rtl"] .logo-learn {
+    margin-right:0;
 }
 
 #front {
@@ -530,6 +539,10 @@ a.license {
   background-color: #ffffff;
 }
 
+[dir="rtl"] .searchbox input {
+  padding:4px 20px 4px 0px;
+}
+
 .searchbox input:focus {
   outline: 2px solid #79bc5f;
 }
@@ -542,6 +555,12 @@ a.license {
   background-position:-152px -150px;
 }
 
+[dir="rtl"] .logo-search {
+  float:right;
+  margin: 4px 3px 10px 10px;
+  transform: scaleX(-1);
+}
+
 input.default-value {
   color:#ccc !important;
   font-style: italic;
@@ -550,6 +569,12 @@ input.default-value {
 .searchbox-default {
   padding-right: 16px;
   float:left;
+}
+
+[dir="rtl"] .searchbox-default {
+  padding-right: 0;
+  padding-left: 16px;
+  float:right;
 }
 
 .searchbox-default input {
@@ -878,6 +903,7 @@ input.default-value {
   /*#topbtns .tb1 span.door {margin-top:-60px;}*/
   #footer {position:relative;}
   .searchbox-default {padding-left:10px;float:right;}
+  [dir="rtl"] .searchbox-default {padding-right:10px;float:left;}
   .searchbox-default input { width: 170px; outline: 2px solid #f0f0f0; }
   .searchbox {border-radius:0px; border:8px solid #f0f0f0;}
   .doc-nav,.doc-nav.fixed {position:relative;margin-bottom:20px;}
@@ -897,6 +923,7 @@ input.default-value {
 
 @media screen and (max-width: 667px) {
   .searchbox-default {padding-left:10px;float:left;}
+  [dir="rtl"] .searchbox-default {padding-right:10px;float:right;}
 }
 
 .no-capitalize a {
