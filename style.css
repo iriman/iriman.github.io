@@ -371,6 +371,11 @@ figure {
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
 }
+[dir="rtl"] .banner, .banner-mobile {
+  left:0;
+  right: unset;
+  transform: scaleX(-1);
+}
 
 .banner span {
   display:none;
