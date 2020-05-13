@@ -461,11 +461,20 @@ figure {
   background:url(./img/sprite.png) no-repeat;
 }
 
+[dir="rtl"] .logo {
+  margin-right:0;
+  margin-left:20px;
+}
+
 .logo-learn {
   width:170px;
   height:42px;
   margin-bottom:8px;
   background-position:0px -115px;
+}
+
+[dir="rtl"] .logo-learn {
+    margin-right:0;
 }
 
 #front {
@@ -542,6 +551,12 @@ a.license {
   background-position:-152px -150px;
 }
 
+[dir="rtl"] .logo-search {
+  float:right;
+  margin: 4px 3px 10px 10px;
+  transform: scaleX(-1);
+}
+
 input.default-value {
   color:#ccc !important;
   font-style: italic;
@@ -550,6 +565,12 @@ input.default-value {
 .searchbox-default {
   padding-right: 16px;
   float:left;
+}
+
+[dir="rtl"] .searchbox-default {
+  padding-right: 0;
+  padding-left: 16px;
+  float:right;
 }
 
 .searchbox-default input {
@@ -897,6 +918,7 @@ input.default-value {
 
 @media screen and (max-width: 667px) {
   .searchbox-default {padding-left:10px;float:left;}
+  [dir="rtl"] .searchbox-default {padding-left:0;padding-right:10px;float:right;}
 }
 
 .no-capitalize a {
