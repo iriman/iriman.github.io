@@ -130,9 +130,15 @@
       border-radius:50%;
       background:#f0f0f0;
       }
+    [dir="rtl"] .doc ol > li:before,
+    [dir="rtl"] .doc ul > li:before {
+      left:0;
+      right: -3em;
+    }
       .doc ol li ul > li:before,
       .doc ul li ul > li:before {content:'➝';}
-
+      [dir="rtl"] .doc ol li ul > li:before,
+      [dir="rtl"] .doc ul li ul > li:before {content:'🠔';}
 /* --------------------------------------------------------
   Colors
 -------------------------------------------------------- */
@@ -205,6 +211,7 @@ strong {font-weight:700;}
 .doc ul {margin: 20px 0;}
 .doc  ul li,.doc ol li, .doc p { font-family:'Quattrocento',serif; }
 .doc li {margin-left:30px;}
+[dir="rtl"] .doc li {margin-left:0; margin-right:30px;}
 .doc li a, .doc p a {color: #79bc5f;}
 .doc-nav-secondary li {padding-left:60px;}
 
@@ -569,6 +576,10 @@ input.default-value {
     background:url(./img/sprite.png) 2px -165px no-repeat;
     overflow:hidden;
     }
+  [dir="rtl"] .faq li a:before {
+    float:right;
+    transform: scaleX(-1);
+    }
   .faq li a:hover:before {background-position:2px -185px;}
 
 /* doc nav */
@@ -760,6 +771,10 @@ input.default-value {
     height:20px;
     background:url(./img/sprite.png) 2px -165px no-repeat;
     overflow:hidden;
+  }
+  [dir="rtl"] .contribute-links ul li a:before {
+    float:right;
+    transform:scaleX(-1);
   }
   .contribute-links ul li a:hover:before {background-position:2px -185px}
 
