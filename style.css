@@ -267,6 +267,10 @@ blockquote p:before {
   font-weight:700;
 }
 
+[lang="fa"] blockquote p:before {
+content:'توجه:';
+}
+
 .rounded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
