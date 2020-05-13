@@ -733,7 +733,9 @@ input.default-value {
     .getstarted span a:hover {color:#fff;}
   .feedback span {display:block;font-weight:700;}
   .feedback a {color: #79bc5f;}
-    .getstarted span:before, .getstarted span:after, .feedback span:before {
+    .getstarted span:before, 
+    .getstarted span:after, 
+    .feedback span:before {
       content:'';
       display:block;
       height: 65px;
@@ -741,9 +743,17 @@ input.default-value {
       float:left;
       background: url(./img/sprite.png);
     }
+    [dir="rtl"] .getstarted span:before, 
+    [dir="rtl"] .getstarted span:after, 
+    [dir="rtl"] .feedback span:before {
+      float:right;
+      transform: scaleX(-1);
+    }
     .getstarted span:before {background-position: -350px -95px;margin-top:-10px;}
     .getstarted span:after {background-position: -412px -95px; float:right;margin-top:-52px;}
+    [dir="rtl"] .getstarted span:after {float:left;}
     .feedback span:before {background-position:-508px -100px; margin-right: 32px;}
+    [dir="rtl"] .feedback span:before {margin-right: unset; margin-left:32px;}
 /* doc content */
 .doc h2,
 .doc h3 {
@@ -874,6 +884,7 @@ input.default-value {
   .doc-main {margin-left:0%}
   [dir="rtl"] .doc-main {margin-right:0%}
   .feedback {padding-top:20px;padding-left:15px;}
+  [dir="rtl"] .feedback {padding-top:20px;padding-left:0;padding-right:15px;}
   .notfound {width:300px;}
   img {max-width:300px;}
   .doc h1, .doc p, .doc ul, .doc ol {margin-left:15px;width:95%;}
