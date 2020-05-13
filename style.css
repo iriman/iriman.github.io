@@ -381,7 +381,13 @@ figure {
   padding:2px 18px 0 60px;
 }
 
-.banner span.en,.banner span.jp {padding-top:14px;}
+[dir="rtl"] .banner span {
+  padding:2px 60px 0 18px;
+  transform: scaleX(-1);
+}
+
+.banner span.en,.banner span.jp,.banner span.fa {padding-top:14px;}
+
 .banner.active {
   width:188px;
 }
@@ -413,6 +419,7 @@ figure {
 }
 #topbtns a:hover {color:#101010;}
 #topbtns .tb1 a {height:204px;background:#92d07a;margin-right:20px;}
+[dir="rtl"] #topbtns .tb1 a {margin-right:0px;margin-left:20px;}
 #topbtns .tb2 a {height:80px; background:#ffd429;margin-bottom:20px;}
 #topbtns .tb3 a {height:84px; background:#7abeff;}
   #topbtns .tb2 a:hover {background:#f0ca42;}
@@ -426,6 +433,11 @@ figure {
     background:transparent url(./img/sprite.png);
     background-position:-280px -160px;
   }
+[dir="rtl"] #topbtns .tb1 span.door {
+  float: left;
+  margin-left: -20px;
+  transform: scaleX(-1);
+}
     #topbtns .tb1 span.door:hover {
       background-position:-270px -193px;
     }
@@ -459,8 +471,12 @@ figure {
   padding:0;
   }
 .contact li {margin-bottom:20px;}
-  .email:before,.twitter:before,.github:before,
-  .email:hover:before,.twitter:hover:before,.github:hover:before {
+  .email:before,
+  .twitter:before,
+  .github:before,
+  .email:hover:before,
+  .twitter:hover:before,
+  .github:hover:before {
     content:'';
     float:left;
     margin:-5px 18px 0 0;
@@ -468,6 +484,15 @@ figure {
     height:20px;
     background:url(./img/sprite.png) no-repeat;
     overflow:hidden;
+  }
+  [dir="rtl"] .email:before,
+  [dir="rtl"] .twitter:before,
+  [dir="rtl"] .github:before,
+  [dir="rtl"] .email:hover:before,
+  [dir="rtl"] .twitter:hover:before,
+  [dir="rtl"] .github:hover:before {
+    float:right;
+    margin:-5px 0 0 18px;
   }
     .email:before {background-position:-19px -158px;}
     .email:hover:before {background-position:-19px -178px;}
