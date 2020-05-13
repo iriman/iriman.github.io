@@ -691,13 +691,18 @@ input.default-value {
   content:'▸';
   margin-right:8px;
 }
+[dir="rtl"] .doc .title span:before {
+  content:'◂';
+  margin-left:8px;
+  margin-right:unset;
+}
 .doc-nav-secondary .title span:before {
   content:'▸';
   margin-left:25px;
   margin-right:8px;
 }
-.doc-nav-secondary-rtl .title span:before {
-  content:'▸';
+[dir="rtl"] .doc-nav-secondary .title span:before {
+  content:'◂';
   margin-right:25px;
   margin-left:8px;
 }
@@ -718,6 +723,9 @@ input.default-value {
   }
 
 .doc .cover span:before {
+  content:'';
+}
+[dir="rtl"] .doc .cover span:before {
   content:'';
 }
 
@@ -795,6 +803,11 @@ input.default-value {
     background:url(./img/sprite.png) -109px -163px no-repeat;
     overflow:hidden;
     }
+  [dir="rtl"] .doc h2:before,
+  [dir="rtl"] .doc h3:before {
+    float:right;
+    margin:6px -21px 0px 6px;
+    }
   .doc h2:hover:before,.doc h2:target:before,
   .doc h3:hover:before,.doc h3:target:before {
     background-position: -109px -183px;
@@ -807,12 +820,19 @@ input.default-value {
     }
 
 /* contribute page */
-.contribute-intro h4, .contribute-links h4 {
+.contribute-intro h4, 
+.contribute-links h4 {
   padding:20px 0px;
   margin-left:70px;
 }
+[dir="rtl"] .contribute-intro h4, 
+[dir="rtl"] .contribute-links h4 {
+  margin-left:0;
+  margin-right:70px;
+}
   .contribute-intro a {color:#79bc5f;}
-  .contribute-intro h4:before,.contribute-links h4:before {
+  .contribute-intro h4:before,
+  .contribute-links h4:before {
     content: '';
     display: inline;
     width: 60px;
@@ -821,6 +841,11 @@ input.default-value {
     margin-left:-70px;
     margin-top:-12px;
     background: transparent url(./img/sprite.png)
+  }
+  [dir="rtl"] .contribute-intro h4:before,
+  [dir="rtl"] .contribute-links h4:before {
+    margin-left:0;
+    margin-right:-70px;
   }
   .contribute-intro h4:before {background-position:  -196px -88px;}
   .contribute-links h4:before {background-position: -265px -88px;}
@@ -893,12 +918,14 @@ input.default-value {
   h4 {margin:10px 0;}
   #header {background: none;}
   #header > * {margin:0 -20px 0 20px;}
+  [dir="rtl"] #header > * {margin:0 20px 0 -20px;}
   #topbtns a {border-radius:0;}
   #topbtns .tb1, #topbtns .tb2, #topbtns .tb3 {height:auto;}
-  #topbtns .tb1 a, #topbtns .tb2 a, #topbtns .tb3 a {margin:0;}
+  #wrapper #topbtns .tb1 a, #wrapper #topbtns .tb2 a, #wrapper #topbtns .tb3 a {margin:0;}  /* #wrapper to override '[dir="rtl"] #topbtns .tb1 a' etc */
   /*#topbtns .tb1 span.door {margin-top:-60px;}*/
   #footer {position:relative;}
   .searchbox-default {padding-left:10px;float:right;}
+  [dir="rtl"] .searchbox-default {padding-left:0;padding-right:10px;float:left;}
   .searchbox-default input { width: 170px; outline: 2px solid #f0f0f0; }
   .searchbox {border-radius:0px; border:8px solid #f0f0f0;}
   .doc-nav,.doc-nav.fixed {position:relative;margin-bottom:20px;}
@@ -909,10 +936,14 @@ input.default-value {
   .notfound {width:300px;}
   img {max-width:300px;}
   .doc h1, .doc p, .doc ul, .doc ol {margin-left:15px;width:95%;}
+  [dir="rtl"] .doc h1, [dir="rtl"] .doc p, [dir="rtl"] .doc ul, [dir="rtl"] .doc ol {margin-left:0;margin-right:15px;}
   .doc h2, .doc h3 {margin-left:30px;width:95%;}
+  [dir="rtl"] .doc h2, [dir="rtl"] .doc h3 {margin-left:0;margin-right:30px;}
   #content {padding-bottom:30px;}
   #footer {padding-left:15px; width: 98%; height: 16rem;}
+  [dir="rtl"] #footer {padding-left:0;padding-right:15px;}
   a.license {left:250px;top:10px;}
+  [dir="rtl"] a.license {left:0;right:250px;}
   .doc-nav.bottom { position: relative; }
 }
 
