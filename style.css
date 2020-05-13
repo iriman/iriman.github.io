@@ -791,18 +791,18 @@ input.default-value {
   #wrapper {
     padding: .9rem;
   }
-  .cell1,
-  .cell2,
-  .cell3,
-  .cell4,
-  .cell5,
-  .cell6,
-  .cell7,
-  .cell8,
-  .cell9,
-  .cell10,
-  .cell11,
-  .cell12 { width:100%; max-width:100%; float: none; }
+  #wrapper .cell1,
+  #wrapper .cell2,
+  #wrapper .cell3,
+  #wrapper .cell4,
+  #wrapper .cell5,
+  #wrapper .cell6,
+  #wrapper .cell7,
+  #wrapper .cell8,
+  #wrapper .cell9,
+  #wrapper .cell10,
+  #wrapper .cell11,
+  #wrapper .cell12 { width:100%; max-width:100%; float: none; }
   .marginL { margin-left:0%; }
   .marginR { margin-right: 0%;}
   .padAll,.padTB,.padLR { padding: 0px;}
