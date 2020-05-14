@@ -23,16 +23,15 @@ ul, ol, dl  {
 html {
     height: inherit;
 }
-.doc-nav,
-#banner-top,
-#header,
-#footer,
-.feedback,
-.banner {
+#wrapper .doc-nav,
+#wrapper #banner-top,
+#wrapper #header,
+#wrapper #footer,
+#wrapper .feedback,
+#wrapper .banner {
     display: none;
 }
-.doc-main,
-.doc-main-rtl {
+#wrapper .doc-main {
     width: 96%;
     margin: 1%;
 }
