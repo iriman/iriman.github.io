@@ -923,7 +923,7 @@ input.default-value {
   [dir="rtl"] #header > * {margin:0 20px 0 -20px;}
   #topbtns a {border-radius:0;}
   #topbtns .tb1, #topbtns .tb2, #topbtns .tb3 {height:auto;}
-  [dir="rtl"] #topbtns .tb1 a, [dir="rtl"] #topbtns .tb2 a, [dir="rtl"]  #topbtns .tb3 a {margin:0;}
+  #wrapper #topbtns .tb1 a, #wrapper #topbtns .tb2 a, #wrapper #topbtns .tb3 a {margin:0;}
   /*#topbtns .tb1 span.door {margin-top:-60px;}*/
   #footer {position:relative;}
   .searchbox-default {padding-left:10px;float:right;}
