@@ -5,11 +5,11 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'>
     <title>LearnOSM</title>
     <link href="{{ site.baseurl }}/reset.css" rel="stylesheet" type="text/css">
-    <link href="{{ site.baseurl }}/style.css" rel="stylesheet" type="text/css">
-    <link href="{{ site.baseurl }}/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="{{ site.baseurl }}/style.css?v={{ site.time | date:'%s' }}" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/print.css?v={{ site.time | date:'%s' }}" rel="stylesheet" type="text/css" media="print">
     <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
     <link href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" >
-    {% if page.lang == "fa" %}<link href="{{ site.baseurl }}/font/sahel/sahel-font.css" rel="stylesheet" type="text/css"/>{% endif %}
+    {% if page.lang == "fa" %}<link href="{{ site.baseurl }}/font/sahel/sahel-font.css?v={{ site.time | date:'%s' }}" rel="stylesheet" type="text/css"/>{% endif %}
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Quattrocento+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script src="{{ site.baseurl }}/vendor/jquery-1.8.2.min.js"></script>
     <script src="{{ site.baseurl }}/vendor/jquery-ui-1.9.2.custom.js"></script>
