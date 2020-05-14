@@ -8,7 +8,7 @@ markdown: kramdown
 kramdown:
   extensions: [smart]
 
-url: "https://learnosm.org/"
+url: "https://iriman.github.io/"
 
 #Permalink structure, see http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:title/
@@ -25,7 +25,7 @@ baseurl: '' #does not include host name
 
 prose:
   rooturl: '_posts'
-  siteurl: "https://learnosm.org/"
+  siteurl: "https://iriman.github.io/"
   media: 'images'
   ignore:
     - index.md
