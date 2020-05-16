@@ -1,7 +1,8 @@
 ---
-layout: contribute-rtl
+layout: contribute
 permalink: /fa/contribute/
 lang: fa
+dir: rtl
 title: Contribute
 contributetitle: "به بهبود راهنماهای ما کمک کنید"
 startwith: "برای شروع آماده‌اید؟"

@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: دستکاری داده‌ها با Osmosis
 permalink: /fa/osm-data/osmosis/
 lang: fa
+dir: rtl
 category: osm-data
 ---
 

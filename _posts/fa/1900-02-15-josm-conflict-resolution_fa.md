@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: حل تداخل در JOSM
 permalink: /fa/josm/josm-conflict-resolution/
 lang: fa
+dir: rtl
 category: josm
 ---
 

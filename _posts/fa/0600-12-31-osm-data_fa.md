@@ -1,7 +1,8 @@
 ---
-layout: doc-rtl
+layout: doc
 permalink: /fa/osm-data/
 lang: fa
+dir: rtl
 title: داده های OSM
 category: osm-data
 cover: yes
