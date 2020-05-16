@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: سایر منابع
 permalink: /fa/resources/
 lang: fa
+dir: rtl
 cover: yes
 category: resources
 ---

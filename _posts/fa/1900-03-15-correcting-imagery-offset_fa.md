@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: تصحیح آفست تصاویر
 permalink: /fa/josm/correcting-imagery-offset/
 lang: fa
+dir: rtl
 category: josm
 ---
 

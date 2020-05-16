@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: BasicAirData GPS Logger
 permalink: /fa/mobile-mapping/basicairdata-gpslogger/
 lang: fa
+dir: rtl
 category: mobile-mapping
 ---
 

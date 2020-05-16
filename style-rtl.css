@@ -155,6 +155,7 @@ body {
 [lang="fa"] body {
   font: normal 17px/1.57 'Sahel-WOL';
   }
+
 h2,h3,h4,h5,h6 {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
@@ -199,6 +200,7 @@ strong {font-weight:700;}
 .doc ul {margin: 20px 0;}
 .doc  ul li,.doc ol li, .doc p { font-family:'Quattrocento',serif; }
 [lang="fa"] .doc  ul li, [lang="fa"] .doc ol li, [lang="fa"] .doc p { font-family:'Sahel-WOL'; }
+
 .doc li {margin-right:30px;}
 .doc li a, .doc p a {color: #79bc5f;}
 .doc-nav-secondary li {padding-right:60px;}

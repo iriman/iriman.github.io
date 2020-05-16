@@ -1,8 +1,9 @@
 ---
-layout: doc-rtl
+layout: doc
 title: شروع به کار با JOSM
 permalink: /fa/josm/start-josm/
 lang: fa
+dir: rtl
 category: josm
 published: true
 ---

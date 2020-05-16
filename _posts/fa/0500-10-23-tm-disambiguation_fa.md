@@ -1,7 +1,8 @@
 ---
-layout: doc-rtl
+layout: doc
 permalink: /fa/coordination/tm-disambiguation/
 lang: fa
+dir: rtl
 title: نسخه‌های مدیر وظایف
 category: coordination
 navigation: skip
