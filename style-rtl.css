@@ -239,6 +239,10 @@ blockquote p{
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+[lang="fa"] blockquote p {
+    font-size: 13px !important;
+    line-height: 28px !important;
+}
 
 blockquote p:before {
   content:'NOTE:';
