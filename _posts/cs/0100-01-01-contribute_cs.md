@@ -6,9 +6,9 @@ title: Contribute
 contributetitle: "Pomožte vylepšit naše průvodce"
 startwith: "Připraveni začít?"
 startA: "Poslat zpětnou vazbu"
-startB: "Help with translations"
-startC: "Improve Images - in your language!"
+startB: "Pomoc s překlady"
+startC: "Zlepšete obrázky - ve vašem jazyce!"
 startD: "Nahlásit problémy a přispět"
 nosearch: true
 ---
-Tento návod je vytvářen a udržován komunitami [OpenStreetMap](http://www.openstreetmap.org/) a [Humanitární OpenStreetMap](http://hotosm.org/). I vy nám můžete nám pomoct zlepšit tento návod - buď když nám pošlete svůj názor nebo přímo editací na [Githubu](http://github.com/hotosm/learnosm).
+Tento návod je vytvářen a udržován komunitami [OpenStreetMap](http://www.openstreetmap.org/) a [Humanitární OpenStreetMap](http://hotosm.org/). I vy nám můžete pomoci zlepšit tento návod – buď když nám pošlete svůj názor nebo přímo editací na [GitHubu](http://github.com/hotosm/learnosm).
