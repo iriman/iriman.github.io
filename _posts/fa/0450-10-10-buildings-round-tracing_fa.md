@@ -63,7 +63,7 @@ category: hot-tips
 
 - [Ivan Gayton's diary entry for Hadjer Lamis, Chad - comments from others indicate the description fits other parts of the world as well](https://www.openstreetmap.org/user/IvanGayton/diary/38612)
 
-- [![building-video]{: height="150px"}](https://www.youtube.com/watch?v=VPJz-AucqF4&index=7&list=PLb9506_-6FMHZ3nwn9heri3xjQKrSq1hN "فیلم‌های آموزشی گروه بشردوستانه OpenStreetMap - افزودن ساختمان به OpenStreetMap")  
+- [![building-video]{: height="150px"}](https://www.youtube.com/watch?v=VPJz-AucqF4&index=7&list=PLb9506_-6FMHZ3nwn9heri3xjQKrSq1hN "فیلم‌های آموزشی گروه بشردوستانه OpenStreetMap - افزودن ساختمان به OpenSstreetMap")  
 
 
 [keymon]:/images/hot-tips/keymon.png

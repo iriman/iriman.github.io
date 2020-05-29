@@ -12,12 +12,8 @@ nosearch: true
 Coordination
 ============
 
-This guide is currently not available. It is being translated. Please refer to it in:  
+> Reviewed 2015-09-18
 
-[English](/en/coordination/),  
-[Deutsch](/de/coordination/), or  
-[Español](/es/coordination/).  
+Because OpenStreetMap involves many people mapping together, it's useful to know how mappers can coordinate this activity.
 
-To help produce translations for this site, go to <https://www.transifex.com> and search for **HOT-OSM**.  
-
-
+This section of learnOSM provides information on various tools used for coordinating mapping activities, means of communication, and quality assurance.

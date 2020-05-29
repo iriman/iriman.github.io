@@ -11,6 +11,7 @@ nosearch: true
 Útmutató kezdőknek
 ================
 
+> Állapot: 2015-07-12  
 
 Ez az útmutató lépésről lépésre végigvezeti az OpenStreetMap kezdeti használatán. Meg fogja tanulni, hogyan hozzon létre egy fiókot, hogyan használja az alapvető térképszerkesztő szoftvereket, a későbbi fejezetekben pedig azt, hogyan mehet ki a terepre. 
 

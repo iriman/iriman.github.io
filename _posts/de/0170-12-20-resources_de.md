@@ -9,7 +9,7 @@ category: resources
 
 # Andere Hilfsmittel
 
-> Geprüft 2020-05-08
+> Geprüft am 2018-02-24
 
 Dies ist eine kommentierte Liste mit Links zu anderen Webseiten, die wir als hilfreich erachten. Alle Links wurden auf Funktion getestet, als dieses Dokument das letzte Mal geprüft wurde.
 

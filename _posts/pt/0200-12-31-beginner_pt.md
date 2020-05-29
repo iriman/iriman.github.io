@@ -11,10 +11,9 @@ nosearch: true
 Guia de Iniciante
 ================
 
+> Reviewed 2015-07-12  
 
-Este guia mostra passo a passo como começar com o OpenStreetMap. Irá aprender
-como criar uma conta, como usar programas simples de edição de mapas, e em capítulos mais adiante, pode aprender a sair para a rua
-e recolher informação para colocar no mapa. 
+Este guia mostra passo a passo como começar com o OpenStreetMap. Irá aprender como criar uma conta, como usar programas simples de edição de mapas, e em capítulos mais adiante, pode aprender a sair para a rua e recolher informação para colocar no mapa. 
 
 ### É novo no OpenStreetMap e quer melhorar o mapa adicionando dados?
 
@@ -28,7 +27,7 @@ Se quer começar e ser capaz de editar os dados do mapa entãi recomendamos a le
 
 O ponto principal é aprender como é coordenado o mapear neste contexto.
 - o [guia de mapeamento remoto](/pt/coordination/HOT-Remote-Response-Guide/) e a informação genérica sobre o [mapeamento humanitário](/pt/coordination/humanitarian/) fornece algum conhecimento base
-- a força motora é o [Gestor de Tarefas](/pt/coordination/tasking-manager3/) do qual se deve familiarizar com o seu processo de funcionamento
+- the workhorse is the [Tasking Manager](/en/coordination/tm-user/) whose workflow you should get familiar with
 
 ### Quer usar o OpenStreetMap em dispositivos móveis?
 

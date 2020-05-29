@@ -6,8 +6,8 @@ title: Contribute
 contributetitle: "Hjelp oss med å forbedre våre veiledninger"
 startwith: "Klar til å begynne?"
 startA: "Send oss tilbakemelding"
-startB: "Hjelp med oversettelser"
-startC: "Forbedre bilder - med ditt språk!"
+startB: "Help with translations"
+startC: "Improve Images - in your language!"
 startD: "Rapporter en feil og bidra"
 nosearch: true
 ---

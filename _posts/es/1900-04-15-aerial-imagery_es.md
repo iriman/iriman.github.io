@@ -1,199 +1,52 @@
 ---
 layout: doc
-title: Usando fotografías aéreas.
+title: Imágenes Aéreas
 permalink: /es/josm/aerial-imagery/
 lang: es
 category: josm
 ---
 
-Usando Fotografías Aéreas
-=========================
+Imágenes Aéreas
+================
 
-Dibujar sobre fotografías es una forma fácil y potente de contribuir a
-OSM. Especialmente cuando la resolución es alta y el cielo está despejado,
-digitalizar a partir de imágenes satelitales pueden proporcionar el esqueleto
-de los mapas de OSM. Esto es útil ya que hace que el trabajo de campo,
-o la toma de datos de las características de un objeto sobre el terreno, 
-sea más fácil para las personas desplazadas a la zona.
+> Revisado 2015-09-21  
 
-Sin embargo, trazar sobre imágenes requiere tomar algunas precauciones 
-para no dibujar los  objetos en una posición equivocada. Hay dos
-importantes aspectos que deben ser tenidos en consideración a la hora de 
-trazar sobre imágenes y fotografías:
+Tracing imagery is an easy and powerful way to contribute to OSM. Using imagery to draw points, lines and shapes on the ground is called **digitizing**. It can often be separated from the act of collecting attribute data on the ground, which is often called **ground-truthing**. Digtizing imagery can provide the skeleton of OSM maps, which makes ground-truthing easier for people in the field. In this chapter we'll learn a little bit more about how aerial imagery works.  
 
-1.  Resolución: La resolución se refiere al nivel de detalle de la imagen 
-    o el número de píxeles que la componen. Un píxel es la unidad más
-    pequeña de una imagen. A menor área por píxel mejor es la resolución.
-    Con píxeles más pequeños podrás distinguir los objetos mejor, como se
-    demuestra en la siguiente imagen. A la izquierda hay una imagen
-    con baja resolución y menos píxeles por imagen. Es difícil distinguir 
-    la pieza de puzle. Por otro lado, la imagen de la derecha, con alta
-    resolución, tiene píxeles más pequeños, lo que permite que la pieza
-    se distinga mucho mejor. En OSM, la mayoría de las veces podrás usar
-    imágenes de alta resolución. Las imágenes civiles ofrecen resoluciones
-    por debajo de «1 metro», lo que significa que cada píxel de la imagen
-    representa un metro cuadrado. ¡No está mal!
+Acerca de Imágenes
+-------------
 
-    ![puzzle][]
+Aerial imagery is the term that we use to describe photographs that are taken from the sky. These can be taken from airplanes, drones, helicopters, or even kites and balloons, but the most common source of imagery comes from satellites orbiting the Earth.  
 
-2.  Georreferenciación: georreferenciación es un término de cómo se han establecido
-    las coordenadas de la imagen, o esencialmente, cómo de cerca están los 
-    píxeles de la imagen respecto a su localización en la realidad. Es
-    un proceso relativamente complejo; a mayor  relieve y variación del 
-    terreno, más difícil es la georreferenciación. Los satélites se 
-    encuentran a cientos de kilómetros de la superficie de la tierra y
-    cuando toman fotografías planas para representar la tierra, que es curva, se
-    producen ciertas distorsiones y desplazamientos. La existencia de 
-    desplazamientos se muestra ligeramente cuando te desplazas entre dos
-    imágenes que cubren la misma zona, por ejemplo, cuando acercas el mapa
-    y la capa anterior es remplazada con una con mejor resolución. 
-    ¿Puedes ver que los objetos mostrados en la imagen se desplazan?
+[In the chapter on GPS](/en/mobile-mapping/using-gps) we learned about the dozens of satellites orbiting Earth which allow our GPS receivers to identify our latitude and longitude. In addition to these GPS satellites, there are also satellites which take photos of the earth. These photos are then manipulated so that they can be used in GIS (mapping) software. Bing Aerial Imagery is made up of satellite photos.  
 
-Para hacerse una idea de por qué se produce el desplazamiento de la imagen
-haz una fotografía a una estatua e imprímela. Ahora, defórmala y estírala
-para que imite la forma de la estatua. Esto es lo que ocurre cuando se
-georreferencia una imagen.
+Resolución
+----------
 
-Afortunadamente, progresivamente se van construyendo satélites con mayor
-precisión de imagen y resoluciones extremadamente precisas (a menudo la unidad 
-está en centímetros). Sin embargo, todavía los satélites no georreferencian,
-por lo que la unidad sigue estando en torno a un metro. Una georreferenciación
-en torno a 5-10 m se considera buena.
+All digital photographs are made up of pixels.  If you zoom in very close on a photograph, you will notice the the image starts to get blurry, and eventually you’ll see that an image is made up of thousands of little squares that are each a different color.  This is true whether the photograph is taken with a handheld camera, a mobile phone, or a satellite orbiting Earth.  
 
-Cuando se quiere levantar con precisión una zona basándose en imágenes 
-satélitales hay que tener en mente que una imagen de alta resolución
-no es el único aspecto que permite una buena localización. Casi todos
-los objetos presentes en la imagen están desplazados de su localización
-en el terreno.
+![Image resolution][]
 
-Hay formas de minimizar la imprecisión provocada por el desplazamiento
-de la imagen. A continuación te contamos los dos escenarios y los 
-métodos principales para sortear los desplazamientos:
+Resolution refers to the number of pixels wide by the number of pixels high that an image is.  More pixels means higher resolution, which means that you are able to see greater detail in the photograph.  Resolution in handheld cameras is often measured in megapixels.  The more megapixels your camera is able to record, the higher the resolution of your photos.  
 
-1. quieres trazar a partir de imágenes en una zona que ya ha sido 
-levantada en OSM,
+Aerial imagery is the same, except that we usually talk about resolution differently.  Measurement is important with aerial photographs - hence, a pixel represents a certain distance on the ground.  We usually describe imagery as something like “two meter resolution imagery,” which means that one pixel is equivalent to two meters on the ground.  One meter resolution imagery would have a higher resolution than this, and 50cm resolution would be higher still.  This is generally the range of imagery that is provided by Bing, though it varies between locations, and in many places it is worse than two meters, at which point it becomes difficult to identify objects in the image.  
 
-2. quieres trazar a partir de imágenes en un área en la que aún no hay
-datos en OSM.
+![Comparison of low and high resolution imagery][]
 
-Desplazamiento con datos existentes en OSM
-------------------------------------------
+The higher the resolution of an aerial image, the easier it is to use in making maps.  
 
-Algunas veces, tras descargar datos de OSM, añadir fotografías y
-acercarnos a la mejor resolución, te das cuenta de que los datos
-existentes en OSM, especialmente las carreteras no se superponen
-exactamente con los objetos de la fotografía.
+Georeferencing
+---------------
 
-![existing data][]
+Each pixel of an aerial photograph has a size, and each pixel also has a location. As we mentioned above, this is because aerial photographs are georeferenced.  
 
-Muchos principiantes en OSM creen que las carreteras han sido trazadas
-de forma incorrecta y mueven las mismas a lo que parece ser la mejor 
-posición. ¡Mover la carretera podría estar completamente __MAL__! Es
-posible que la imagen esté mal alineada en comparación con la realidad
-en campo.
+Just like a GPS point has a latitude and longitude, so will the pixels in an aerial image. However, just as poor resolution can bring challenges to mapping, so can poorly georeferenced images.  
 
-Una forma de comprobar que una imagen está desplazada es mediante el uso
-de trazas GPS. Para hacer esto, añade __trazas GPS existentes__ (tuyas o
-de otras personas-- puedes encontrar más información en [Subir datos GPS al servidor](https://docs.google.com/a/engelsted.co/document/d/1jjlthSuc9yltWxQDKxeQD4OO9LvH_DaGwEsdlxSE6l8/edit)
-al área que estás trazando. Haz clic en descargar ![download][] y después
-marca «Datos GPS en bruto» en la parte superior de la ventana «Descargar».
-Después de la descarga aparecerá una capa adicional denominada «Datos GPX descargados».
+Let's think for a moment about how georeferencing works, and why it is challenging to do. When somebody georeferences an image, they first identify a handful of pixels in the image that are known locations. If we have a square photograph, we might identify the coordinates of all four corners, and that way the whole image can be correctly placed.  
 
-![downloaded GPX][]
+This all seems quite simple, but consider this: Earth is round; camera lenses are round; yet photographs are flat and 2-dimensional. This means that when a flat image is being mapped onto the round Earth, there is always going to be some stretching of the image and distortion. Imagine trying to flatten an orange-peel. It won't end up rectangular. Because of this problem, all of the pixels in an aerial image might not be perfectly placed.  
 
-En este ejemplo, con los datos GPS (en rojo) añadidos puedes ver que los
-datos existentes (las carreteras) están colocados correctamente. La fotografía
-no está correctamente georreferenciada y tiene un desplazamiento en comparación
-con la realidad. Debe ser ajustada.
+Luckily, some really smart people have devised clever algorithms for solving this problem, and so the imagery that you see on Bing is pretty close to being accurate. In most places it won't be noticeably wrong at all - and it's certainly fine for making maps. The most common areas for imagery to be inaccurately located are in hilly, mountainous areas. In the [Correcting Imagery Offset chapter](/en/josm/correcting-imagery-offset) we will see how to correct for this problem.  
 
-> y no como una única línea sólida. La mayoría de dispositivos GPS tienen una
-> precisión de 2-5 m, que es suficiente para las carreteras ya que no se conduce 
-> o camina por el centro de la carretera. Intenta imaginar una media de las 
-> trazas GPS en medio de las líneas existentes.
-
-Para desplazar la imagen al lugar correcto, haz clic con el botón derecho
-del ratón en la capa de la fotografía o en el menú «Imágenes», abre 
-«Nuevo desplazamiento», o usa el botón de ajuste de la imagen ![adjust button][]
-en la barra de herramientas izquierda. Arrastra entonces la imagen hasta
-que quede correctamente situada según las trazas GPS. Haz clic en otra
-herramienta cuando hayas acabado. Observa que en algunos proyectos la gente
-guarda el desplazamiento en el wiki o en otras fuentes, de forma que las
-personas que están trabajando juntas en la misma zona pueden compartir
-valores comunes del mismo. También puedes ponerle al desplazamiento un
-«Nombre del marcador» si lo necesitas para usarlo de nuevo en un futuro.
-Este desplazamiento se guarda en nuevo menú disponible en el desplegable
-«Imágenes».
-
-![adjust window][]
-
-![downloaded GPX][]
-
-Ahora que la fotografía está ajustada puedes trazar sobre ella. Mientras
-haces el levantamiento puedes ocultar «Datos GPX descargados» si interfiere
-con tu trabajo.
-
-![adding to existing data][]
-
-Recuerda una última cosa: ¡el desplazamiento podría no ser el mismo a
-lo largo de toda la extensión de la imagen! Esto es especialmente cierto
-en zonas con un relieve accidentado. Así que cuando parezca que la
-imagen está desplazada de nuevo, repite el proceso completo.
-
-Desplazamiento sin datos en OSM
--------------------------------
-
-Podría ser que fueras el primero en levantar una zona en OSM, por
-ejemplo en una remota zona rural o en países en desarrollo. Por tanto,
-no puedes descargar datos de OSM existentes ni trazas GPS.
-
-![no data][]
-
-¿Cómo afrontar esta situación sin tener ninguna referencia para controlar
-el desplazamiento de la imagen? Hay dos formas de sortear el problema:
-
-1.  Ir a la zona para tomar datos: si tienes la posibilidad de usar un GPS en la zona,
-    toma puntos de referencia usando infraestructura destacada o en objetos
-    que sean visibles en la fotografía y/o realiza trazas de las carreteras.
-    Después añade estos datos a JOSM.
-
-2. Usar datos existentes: si no puedes ir a tomar datos en campo, otra
-    opción es tomar datos de otras __Bases de Datos de Licencia Abierta (ODbl)__.
-    Si puedes, es mejor comprobar las imágenes con otras fotografías que
-    estén correctamente alineadas. Si estás corrigiendo el desplazamiento
-    de una imagen en base a otra, la forma más fácil de hacerlo es
-    utilizar transparencia. Para hacer esto, simplemente haz clic
-    en la línea de gradiente y cambia la opacidad de la capa.
-
-    ![change opacity][]
-
-Normalmente las fotografía de las administraciones públicas tienen una resolución
-pobre (más de 10 metros de resolución) por lo que podría ser peor que
-la imagen anterior.
-
-Si tienes acceso a datos vectoriales, las carreteras, lagos, ríos y edificios
-son tu mejor opción para determinar el desplazamiento de la fotografía.
-Intenta alejarte de los bordes ya que estos no son fiables para descubrir
-si una fotografía está desalineada.
-
-Resumen
--------
-
-Trazar sobre fotografías es una técnica que hace que el levantamiento de 
-datos en OSM sea más rápido y eficiente. Sin embargo, debe hacerse con precisión
-y cuidado. Hay veces en los que se está levantando una zona y la imagen de 
-esa zona está desplazada. Hay formas de lidiar con fotografías 
-inexactas, ya sea porque la imagen tiene poca resolución o
-porque está mal georreferenciada.. Estas formas implican principalmente georreferenciar la imagen con
-trazas GPS.
-
-
-
-[puzzle]: {{site.baseurl}}/images/offset_puzzle_es.png
-[existing data]: {{site.baseurl}}/images/offset_existing_data_en.png
-[download]: {{site.baseurl}}/images/offset_tool_download_en.png
-[downloaded GPX]: {{site.baseurl}}/images/offset_downloaded_gpx_en.png
-[adjust button]: {{site.baseurl}}/images/offset_tool_adjust_en.png
-[adjust window]: {{site.baseurl}}/images/offset_adjust_window_es.png
-[adding to existing data]: {{site.baseurl}}/images/offset_add_to_data_en.png
-[no data]: {{site.baseurl}}/images/offset_no_data_en.png
-[change opacity]: {{site.baseurl}}/images/offset_change_opacity_es.png
+[Image resolution]: /images/josm/orange-resolution.png
+[Comparison of low and high resolution imagery]: /images/josm/low-res-high-res.png
